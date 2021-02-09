@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
-from . import secret_settings
+from . import local_settings
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = secret_settings.SECRET_KEY
+SECRET_KEY = local_settings.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -127,7 +127,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 #Email settings
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
-EMAIL_HOST_USER = secret_settings.HOST
-EMAIL_HOST_PASSWORD = secret_settings.PASSWORD
+EMAIL_HOST_USER = local_settings.HOST
+EMAIL_HOST_PASSWORD = local_settings.PASSWORD
 EMAIL_USE_TLS = True
 
