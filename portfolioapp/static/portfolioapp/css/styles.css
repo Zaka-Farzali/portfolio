@@ -10071,11 +10071,9 @@ h3 {
   color: orange;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: orange;
+  color: white;
 }
-#mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: orange;
-}
+
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.8rem;
@@ -10096,11 +10094,11 @@ h3 {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #1abc9c;
+    background: orange;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #1abc9c;
+    background: orange;
   }
 
   #mainNav.navbar-shrink {
