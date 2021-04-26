@@ -84,7 +84,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>                
-                                <img  class="img-fluid" src="{{p.img.url}}" alt="">
+                                <img style="width: 350px; height: 200px;" class="img-fluid" src="{{p.img.url}}" alt="">
                         </div>
                     </div>
                     {% endfor %}
@@ -104,12 +104,12 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ml-auto"><p class="lead">Hi there! If you scrolled this far, I assume you may want to know more about me. I am a young developer with a little professional experiense who just loves coding and very much excited about wide opportunities ahead of me. I do not put myself in a box, I cannot describe myself with one two or even three words.</p></div>
-                    <div class="col-lg-4 mr-auto"><p class="lead">However, if I would be an employer who likes things to be done fast, excelently and just like I would want it to be done, I would surely find an employee like me. Do not believe me? Here is my resume with more information about my background. Also, feel free to contact me!</p></div>
+                    <div class="col-lg-4 ml-auto"><p class="lead">Hi, my name is Zaka Farzali and I am currently studying Computer Scince Msc in Budapest University of Technology and Economics. During my last term of BSc Computer Scince course I had an opportunity to work in one of the leading banks in Azerbaijan.</p></div>
+                    <div class="col-lg-4 mr-auto"><p class="lead">I gained my first experince in related field and I should say that I was learning very quickly. Happily,  I also got accepted to my current univerisity, so I left my job to continue my education. I am very excited to continue my journey in the field from where I left it.</p></div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="{% static 'portfolioapp/Resume-Zaka-Farzali.pdf'%}" download="FIle">
+                    <a class="btn btn-xl btn-outline-light" href="{% static 'portfolioapp/Zaka\'s Resume.pdf'%}" download="FIle">
                         <i class="fas fa-download mr-2"></i>
                         Download Resume
                     </a>
@@ -181,21 +181,20 @@
                         <p class="lead mb-0">
                             Hungary, Budapest
                             <br />
-                            1074 Harsfa
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/Zaka-Farzali"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/zaka-farzali/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/zaka.farzali/?hl=ru"><i class="fab fa-fw fa-instagram"></i></a>
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">Quote of the day to inspire you</h4>
+                        <h4 class="text-uppercase mb-4">Quote to inspire you</h4>
                         <p class="lead mb-0">
-                            “We need to accept that we won’t always make the right decisions, that we’ll screw up royally sometimes – understanding that failure is not the opposite of success, it’s part of success.”
+                            “{{quote.quote}}”
                         </p>
                     </div>
                 </div>
@@ -228,7 +227,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="{{p.img.url}}" alt="" />
+                                    <img class="img-fluid rounded mb-5" src="{{p.img.url}}" alt=""/>
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-5">{{p.description}}</p>
                                     <button class="btn btn-primary" data-dismiss="modal">

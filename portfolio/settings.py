@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '+(t6y38ziewcdo)-(7aw0ykpvn@1btht&f^_zbn9&fzn^0fbbb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['zaka.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
